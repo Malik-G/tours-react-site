@@ -1,0 +1,16 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+$mainBlack: #222;
+$mainWhite: #fff;
+$mainGrey: #696969;
+$mainGreen: #6B8E23;
+
+body {
+   font-family: 'Staatliches', cursive;
+   background: $mainGrey;
+   color: $mainWhite;
+}
