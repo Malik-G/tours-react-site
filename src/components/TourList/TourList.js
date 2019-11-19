@@ -7,23 +7,29 @@ export default class TourList extends Component {
    state = {
       theTours: tours
    }
-   
+
+   // deleteTour = id => {
+   //    const newTourList = this.state.theTours.filter(t => t.id !== id)
+   //    this.setState({theTours: newTourList})
+   // }
+
    deleteTour = id => {
-      const newTourList = this.state.theTours.filter(t => t.id !== id)
-      this.setState({theTours: newTourList})
+      return (event) => {
+         const newTourList = this.state.theTours.filter(t => t.id !== id)
+         this.setState({ theTours: newTourList })
+      }
    }
 
    render() {
 
       const { theTours } = this.state
       console.log(theTours)
-      const tourMap = theTours.map( t => 
+      const tourMap = theTours.map(t =>
          <Tour key={t.id} tour={t} deleteTour={this.deleteTour} />
       )
 
       return (
-         <div>
-            <h3>This is TourList</h3>
+         <div className="tourList">
             {tourMap}
          </div>
       )

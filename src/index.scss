@@ -5,12 +5,14 @@
 }
 
 $mainBlack: #222;
+$mainBlack2: rgb(59, 59, 59);
 $mainWhite: #fff;
 $mainGrey: #696969;
 $mainGreen: #6B8E23;
+$mainTransition: all 0.3s linear;
 
 body {
    font-family: 'Staatliches', cursive;
-   background: $mainGrey;
+   background: $mainBlack2;
    color: $mainWhite;
 }
