@@ -4,7 +4,7 @@ export const tours = [
       city: 'Saint Paul',
       image: './img/stpaul.png', //can do relative path this way if photos are stored in public folder
       name: 'Capital City Package',
-      info: 'Capitol city of Minnesota'
+      info: `Capitol city of Minnesota`
 
    },
    {

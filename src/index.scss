@@ -9,10 +9,10 @@ $mainBlack2: rgb(59, 59, 59);
 $mainWhite: #fff;
 $mainGrey: #696969;
 $mainGreen: #6B8E23;
-$mainTransition: all 0.3s linear;
+$mainTransition: all 0.5s linear;
 
 body {
    font-family: 'Staatliches', cursive;
-   background: $mainBlack2;
+   background: $mainBlack;
    color: $mainWhite;
 }
